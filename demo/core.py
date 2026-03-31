@@ -42,12 +42,6 @@ class demo(AppMixin, SettingsMixin, UserInterfaceMixin, InvenTreePlugin):
             'default': 42,
         }
     }
-    
-    
-    
-    
-    
-    
 
     # User interface elements (from UserInterfaceMixin)
     # Ref: https://docs.inventree.org/en/latest/plugins/mixins/ui/

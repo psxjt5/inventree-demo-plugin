@@ -1,4 +1,4 @@
-import type { InvenTreePluginContext } from '@inventreedb/ui';
+import { checkPluginVersion, type InvenTreePluginContext } from '@inventreedb/ui';
 import { Alert, Button, Text } from '@mantine/core';
 import { notifications } from '@mantine/notifications';
 
@@ -28,6 +28,7 @@ function PluginSettingsDisplay({
 
 
 export function renderPluginSettings(context: InvenTreePluginContext) {
+    checkPluginVersion(context);
     return (
         <PluginSettingsDisplay context={context} />
     );
