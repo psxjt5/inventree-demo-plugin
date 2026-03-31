@@ -14,7 +14,7 @@ import { ApiEndpoints, apiUrl, ModelType } from '@inventreedb/ui';
  * Refer to the InvenTree documentation for the context interface
  * https://docs.inventree.org/en/latest/plugins/mixins/ui/#plugin-context
  */
-function demoPanel({
+function DemoPanel({
     context
 }: {
     context: InvenTreePluginContext;
@@ -121,6 +121,6 @@ export function renderdemoPanel(context: InvenTreePluginContext) {
     checkPluginVersion(context);
 
     return (
-        <demoPanel context={context} />
+        <DemoPanel context={context} />
     );
 }

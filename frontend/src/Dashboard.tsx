@@ -10,7 +10,7 @@ import { checkPluginVersion, type InvenTreePluginContext } from '@inventreedb/ui
  * Refer to the InvenTree documentation for the context interface
  * https://docs.inventree.org/en/stable/extend/plugins/ui/#plugin-context
  */
-function demoDashboardItem({
+function DemoDashboardItem({
     context
 }: {
     context: InvenTreePluginContext;
@@ -40,5 +40,5 @@ function demoDashboardItem({
 //  component
 export function renderdemoDashboardItem(context: InvenTreePluginContext) {
     checkPluginVersion(context);
-    return <demoDashboardItem context={context} />;
+    return <DemoDashboardItem context={context} />;
 }
